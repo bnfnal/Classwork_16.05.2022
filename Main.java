@@ -16,6 +16,13 @@ public class Main
         System.out.println(Abbreviator.abbreviate(s));
         System.out.println();
         
+        // Task 2: Triangular Treasure
+        
+        System.out.println("Task 2: Triangular Treasure");
+        System.out.println("Введите целое число n");
+        long n = sc.nextLong();
+        System.out.println("n-ое треугольное число:");
+        System.out.println(Triangular.triangular(n));
     }
     
     // Task 1: Word a10n (abbreviation)
@@ -37,6 +44,17 @@ public class Main
         }
         return res;
       }
+    }
+    
+    // Task 2: Triangular Treasure
+    
+    public static class Triangular 
+    {
+        public static long triangular(long n) 
+        {
+            if (n <= 0) return 0;
+            return(n*(n+1)/2);
+        }
     }
   
 }
